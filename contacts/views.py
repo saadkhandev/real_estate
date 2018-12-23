@@ -32,13 +32,13 @@ def contact(request):
 
         # Send email
         # send_mail(subject, message, from_email, to_list, fail_silently=True)
-        send_mail(
-            'Property Listing Inquiry',
-            'There has been an inquiry for' + listing + '. Sign in to the admin panel',
-            settings.EMAIL_HOST_USER,
-            ['sa4dkhan@gmail.com'],
-            fail_silently=False,
-
-        )
+        # send_mail(
+        #     'Property Listing Inquiry',
+        #     'There has been an inquiry for' + listing + '. Sign in to the admin panel',
+        #     settings.EMAIL_HOST_USER,
+        #     ['sa4dkhan@gmail.com'],
+        #     fail_silently=False,
+        #
+        # )
         messages.success(request, 'Your request has been submitted, a realtor will get back to you soon')
         return redirect('/listings/'+listing_id)
