@@ -100,7 +100,6 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost',
-
     }
 }
 
@@ -162,5 +161,3 @@ try:
     from .local_settings import *
 except ImportError:
     pass
-
-
